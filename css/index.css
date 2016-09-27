@@ -25,7 +25,6 @@
     .container {
         width: 100%;
         height: auto;
-        border: 1px solid #000;
         background-color: #e6e6e6;
     }
     /*----头部分------*/
@@ -144,22 +143,26 @@
     }
     /*登录角色小图标的变换*/
     
-    .t_login span {
-        background-image: url(../images/teacher0.png);
+    .t_login,
+    .s_login {
         background-repeat: no-repeat;
+        background-position: 8% center;
     }
     
-    .t_login span:hover {
+    .t_login {
+        background-image: url(../images/teacher0.png);
+    }
+    
+    .t_login:hover {
         background-image: url(../images/teacher1.png);
         color: #8f8282;
     }
     
-    .s_login span {
+    .s_login {
         background-image: url(../images/student0.png);
-        background-repeat: no-repeat;
     }
     
-    .s_login span:hover {
+    .s_login:hover {
         background-image: url(../images/student1.png);
         color: #8f8282;
     }
