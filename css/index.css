@@ -182,7 +182,8 @@
     
     .board {
         width: 1050px;
-        height: 525px;
+        min-height: 540px;
+        height: auto;
     }
     
     .border,
@@ -197,7 +198,7 @@
     }
     
     .news>li {
-        width: 320px;
+        width: 310px;
         padding: 0 10px;
     }
     
@@ -210,10 +211,18 @@
         color: #fa294d;
     }
     
-    .news span {
+    .time {
         float: right;
         margin-right: 10px;
     }
+    /*----超出隐藏----*/
+    
+/*     .text {
+        width: 10em;
+        overflow: hidden;                自动隐藏文字
+        /* text-overflow: ellipsis;        文字隐藏后添加省略号
+        /* white-space: nowrap; */
+    } */
     /*---------------*/
     /*----页脚部分---*/
     
@@ -228,15 +237,17 @@
     
     .supporters {
         width: 1040px;
-        height: 25px;
+        height: 30px;
         margin: 0 auto;
         border: 1px solid #1a7018;
+        line-height: 30px;
     }
     
     .supporters>span {
         padding-left: 10px;
         color: #826f6f;
         font-weight: bold;
+        line-height: 30px;
     }
     
     .supporters>li {
@@ -245,6 +256,7 @@
     
     .supporters>li>a {
         color: #826f6f;
+        line-height: 30px;
     }
     /*版权声明*/
     
